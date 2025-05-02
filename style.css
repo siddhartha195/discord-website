@@ -1,0 +1,96 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+    background-color: #c4c3d0;
+    color: #fff;
+}
+header {
+    background: #2f3136;
+    padding: 1em;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo{
+    font-size: 1.5em;
+    font-weight: bold;
+}
+.nav-links {
+   list-style: none;
+   display: flex;
+   gap: 1em;
+}
+.nav-link li a{
+    color: #fff;
+    text-decoration-style: none;
+}
+
+.menu-toggle {
+    display: none;
+    background:none;
+    border: none;
+    color: white;
+    font-size: 1.5em;
+    cursor: pointer;
+  }
+  
+
+ .card{
+  box-shadow: #D4F1F4;
+  margin: 8px;
+  background-color: #e6e6fa;
+ }
+
+ .container{
+  padding: 0 16px;
+  text-decoration: dashed;
+  font-family: 'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
+  background-color: #4b0082;
+ } 
+ 
+  .hero{
+    padding: 4em 2em;
+    text-align: center;
+    background: #7289da;
+  }
+  .hero .join-btn{
+    margin-top: 1em;
+    padding: 0.7em 1.5em;
+    background: #5865f2;
+    border: none;
+    color: #fff;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 1em
+  }
+  #about {
+    padding: 2em;
+    background: #40444b;
+   }
+    footer{
+     text-align: center;
+     padding: 1em;
+     background: #2f3136;
+   }
+   @media(max-width: 768px){
+    .nav-links{
+      display: none;
+      flex-direction: column;
+    }
+
+    .nav-links.active{
+      display: flex;
+    }
+    .menu-toggle{
+      display: block;
+    }
+   }
