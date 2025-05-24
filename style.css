@@ -66,17 +66,17 @@ body {
 }
 
 .login-btn {
-  background:#7289da;
+  background:#ffffff;
   border: 1px solid rgba(255, 255, 255, 0.3);
-  padding: 10px;
-  border-radius: 10px;
+  padding: 9px;
+  border-radius: 9999px;
   text-align: center;
-  color: white;
+  color: #fff;
   text-decoration:none;
   margin-right: -150px;
 }
 .login-btn:hover{
-  background-color: #fff;
+  background-color: #ffffffbe;
 }
 /*hamburger icon for mobile only*/
  .hamburger{
@@ -151,20 +151,21 @@ body {
   flex-direction: column;
   gap: 15px;
 }
-.login-btn {
+.sidebar-login-btn {
   background-color: white;
   color: black;
   border: none;
   padding: 10px 20px;
-  border-radius: 9999px; /* fully rounded */
+  border-radius:12px; /* fully rounded */
   font-size: 16px;
   font-weight: bold;
   cursor: pointer;
   transition: background-color 0.3s ease, transform 0.2s ease;
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
 }
 
-.login-btn:hover {
+.sidebar-login-btn:hover {
   background-color: #f0f0f0;
   transform: scale(1.03);
 }
