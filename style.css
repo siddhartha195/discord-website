@@ -66,13 +66,13 @@ body {
 }
 
 .login-btn {
-  background:#ffffff;
-  border: 1px solid rgba(255, 255, 255, 0.3);
-  padding: 9px;
-  border-radius: 9999px;
-  text-align: center;
-  color: #fff;
-  text-decoration:none;
+  background: white;
+  color: black;
+  padding: 10px;
+  border: none;
+  border-radius: 12px;
+  font-weight: bold;
+  cursor: pointer;
   margin-right: -150px;
 }
 .login-btn:hover{
@@ -156,7 +156,7 @@ body {
   color: black;
   border: none;
   padding: 10px 20px;
-  border-radius:12px; /* fully rounded */
+  border-radius:12px; 
   font-size: 16px;
   font-weight: bold;
   cursor: pointer;
@@ -238,10 +238,11 @@ body {
   height: auto;
   border-radius: 12px;
 }
+
 /* feature section*/
 .feature-section {
-  padding: 100px 20px;
-  margin: 70px;
+  box-sizing: border-box;
+  padding: 40px 20px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -251,29 +252,34 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background: linear-gradient(135deg, #2f194b, #3b1e68);
-  border-radius: 50px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 90px;
   padding: 40px;
   max-width: 1200px;
   width: 100%;
   color: white;
   gap: 50px;
-  
+  height: 600px;
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  overflow: hidden;
 }
 .video-box {
-  width: 40%;
+  width: 400%;
+  height: 100%;
   max-width: 600px;
-  border-radius: 40px;
+  border-radius: 100px;
   overflow: hidden;
-  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
-  background: #000;
 }
 
 video {
-  width: 100%;
+  width: 114%;
   height: auto;
   display: block;
 }
+
+
+
 .feature-text {
   max-width: 500px;
 }
@@ -335,7 +341,7 @@ video {
 .character-image {
   max-width: 100%;
   height: auto;
-  margin-bottom: -105px;
+  margin-bottom: -90px;
 }
 
 /* Footer */
@@ -409,11 +415,35 @@ video {
   .hamburger{
     display: block;
   }
+  .feature-section{
+    width: 100%;
+    margin: -1%;
+    padding-bottom: 50%;
+  }
   .feature-box {
-    flex-direction: column;
+    flex-direction: column-reverse;
+    align-items: center;
     text-align: center;
-    padding: 30px;
-    border-radius: 30px;
+    height: 10%; 
+    padding: 30px 20px;
+    width: 100%;
+    max-width: none;
+    box-sizing: border-box;
+  }
+
+  .feature-text {
+    margin-bottom: 30px;
+  }
+
+  .video-box {
+    width: 100%;
+    max-width: 100%;
+    border-radius: 100px;
+  }
+
+  video {
+    width: 100%;
+    border-radius: 50px;
   }
 
   .feature-image img {
