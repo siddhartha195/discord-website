@@ -11,3 +11,30 @@ function toggleSidebar() {
     });
   });
   
+ const footer = document.querySelector("footer");
+const stickyParts = document.querySelectorAll(".sticky-part");
+
+const observer = new IntersectionObserver(
+  (entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        stickyParts.forEach(el => {
+          el.style.opacity = '0';
+          el.style.pointerEvents = 'none';
+        });
+      } else {
+        stickyParts.forEach(el => {
+          el.style.opacity = '1';
+          el.style.pointerEvents = 'auto';
+        });
+      }
+    });
+  },
+  {
+    root: null,
+    threshold: 0.1
+  }
+);
+
+observer.observe(footer);
+ 
