@@ -10,31 +10,86 @@
 </head>
 <body>
   <!-- Navbar -->
-  <header class="navbar">
+  <div class="navbar">
   <div class="logo-section sticky-part">
     <img src="assets/logo 01.png" alt="Logo" class="logo" />
   </div>
-  <div class="login-section sticky-part">
-    <button class="login-btn">Log In</button>
-  </div>
-</header>
+  
 
 <!-- Nav Links (Not Sticky — Will Scroll Away) -->
 <nav class="nav-links">
   <div class="nav-item">Download</div><br>
   <div class="nav-item">Nitro</div><br>
   <div class="nav-item">Discover</div><br>
-  <div class="nav-item">Safety</div><br>
-  <div class="nav-item">Quests</div><br>
-  <div class="nav-item">Support</div><br>
-  <div class="nav-item">Blog</div><br>
+   <!-- Safety dropdown -->
+  <div class="nav-item dropdown">
+    Safety
+    <div class="dropdown-menu">
+      <div class="dropdown-section">
+        <h4>Resources</h4>
+        <a href="#">Safety News</a>
+        <a href="#">Safety Library</a>
+      </div>
+      <div class="dropdown-section">
+        <h4>Resources</h4>
+        <a href="#">Privacy Hub</a>
+        <a href="#">Policy Hub</a>
+        <a href="#">Transparency Hub</a>
+      </div>
+      <div class="dropdown-section">
+        <h4>Resources</h4>
+        <a href="#">Parent Hub</a>
+        <a href="#">Teen Charter</a>
+      </div>
+    </div>
+  </div><br>
+  <div class="nav-item dropdown">
+    Quests
+    <div class="dropdown-menu">
+      <div class="dropdown-section">
+        <h4>Resources</h4>
+        <a href="#">Advertising</a>
+        <a href="#">Success Stories</a>
+        <a href="">Quests FAQ</a>
+      </div>
+    </div>
+  </div><br>
+  <div class="nav-item dropdown">
+    Support
+    <div class="dropdown-menu">
+      <div class="dropdown-section">
+        <h4>Resources</h4>
+        <a href="#">Help Center</a>
+        <a href="#">Feedback</a>
+        <a href="">Submit a Report</a>
+      </div>
+    </div>
+  </div><br>
+  <div class="nav-item dropdown">
+    Blog
+    <div class="dropdown-menu">
+      <div class="dropdown-section">
+        <h4>Collection</h4>
+        <a href="#">Feature</a>
+        <a href="#">community</a>
+        <a href="#">Discord HQ</a>
+        <a href="">Engineearing & Developers</a>
+        <a href="">How to Discord</a>
+        <a href="">Policy & Safety</a>
+        <a href="">Product & Feature</a>
+      </div> 
+    </div>
+  </div><br>
   <div class="nav-item">Developers</div><br>
   <div class="nav-item">Careers</div><br>
 </nav>
-  
-        <div class="hamburger" onclick="toggleSidebar()">☰</div>
-      </div>
-    </header>
+
+<div class="login-section sticky-part">
+  <button class="login-btn">Log In</button>
+</div>
+<div class="hamburger" onclick="toggleSidebar()">☰</div>
+</div>
+</header>
     <!-- Sidebar -->
      <div id="sidebar" class="sidebar">
       <div class="sidebar-content">
@@ -96,16 +151,17 @@
       
      <section class="feature-section">
   <div class="feature-box">
-    <div class="video-box">
-      <video autoplay muted loop>
-        <source src="assets/6257adef93867e50d84d30e2_6763ba683086419cf7bfb7fb_Discord_Refresh_Platforms-transcode.mp4" type="video/mp4" />
-      </video>
-    </div>
     <div class="feature-text">
       <h2>MAKE YOUR GROUP CHATS MORE FUN</h2>
       <p>use cutom emoji, stickers, soundboard, effect, and more to add your personality to
               your voice,video, or text chat. set your avtar and a custom status, and write your own profile to show up in chat your way</p>
     </div>
+    <div class="video-box">
+      <video autoplay muted loop>
+        <source src="assets/6257adef93867e50d84d30e2_6763ba683086419cf7bfb7fb_Discord_Refresh_Platforms-transcode.mp4" type="video/mp4" />
+      </video>
+    </div>
+    
   </div>
 </section><br><br><br><br>
 <!-- marquee wrapper -->
@@ -145,16 +201,17 @@
       </section><br><br>
       <section class="feature-section">
         <div class="feature-box">
-          <div class="video-box">
-            <video autoplay muted loop>
-              <source src="assets/6257adef93867e50d84d30e2_6763ba683086419cf7bfb7fb_Discord_Refresh_Platforms-transcode.mp4" type="video/mp4" />
-            </video>
-          </div>
           <div class="feature-text">
             <h2>MAKE YOUR GROUP CHATS MORE FUN</h2>
             <p>use cutom emoji, stickers, soundboard, effect, and more to add your personality to
               your voice,video, or text chat. set your avtar and a custom status, and write your own profile to show up in chat your way</p>
             </div>
+          <div class="video-box">
+            <video autoplay muted loop>
+              <source src="assets/6257adef93867e50d84d30e2_6763ba683086419cf7bfb7fb_Discord_Refresh_Platforms-transcode.mp4" type="video/mp4" />
+            </video>
+          </div>
+          
           </div>
         </section><br><br>
         <section class="box-section1">
@@ -268,8 +325,8 @@
               <li><a href="#">Company Information</a></li>
             </ul>
           </div>
-          <div class="footer-bottom">
-            <img src="assets/discord watermark.svg" alt="Discord" width="90%">
+          <div class="container_word">
+            <img src="assets/discord watermark.svg" loading="lazy" aria-label="Discord" alt="Discord" class="word" width="90%">
           </div>
         </footer>
         <script src="script.js"></script>
